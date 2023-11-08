@@ -1,0 +1,111 @@
+.principal {
+    padding: 24px 16px;
+    display: grid;
+    gap: 16px;
+}
+
+.titulo-pagina {
+    font-size: 1.5rem;
+    font-weight: 700; 
+}
+
+.titulo__sessao {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.cartao {
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: var(--cor-do-cartao);
+}
+
+.cartao__imagem--desktop {
+    display: none;
+}
+
+.cartao--destaque {
+    margin-bottom: 16px;
+}
+
+.cartao__conteudo {
+    padding: 16px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+}
+
+.cartao__destaque, .cartao__titulo, .cartao__perfil, .cartao__botao--destaque {
+    grid-column: span 2;
+}
+
+.cartao__titulo {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.cartao__perfil {
+    color: var(--cor-do-texto-alternativa);
+    font-size: 0.9rem;
+}
+
+.cartao__info {
+    display: flex;
+    align-items: center;
+    color: var(--cor-do-texto-alternativa);
+    font-size: 0.9rem;
+}
+
+.cartao__info--tempo::before {
+    content: "\e90c";
+    margin-right: 8px;
+}
+
+.cartao__info--views::before {
+    content: "\e90f";
+    margin-right: 8px;
+}
+
+.cartao__info--dinheiro::before {
+    content: "\e905";
+}
+
+.cartao__botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-do-botao);
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    justify-self: flex-end;
+}
+
+.cartao__botao--play::before {
+    content: "\e90b";
+    font-size: 24px;
+}
+
+.cartao__botao--compra::before {
+    content: "\e901";
+    font-size: 24px;
+}
+
+.cartao__botao--destaque {
+    width: 100%;
+}
+
+.cartao__botao--destaque::before{
+    margin-right: 8px;
+}
+
+.cartao--recentes {
+    display: none;
+}
+
+.sessao {
+    display: grid;
+    gap: 16px;
+}

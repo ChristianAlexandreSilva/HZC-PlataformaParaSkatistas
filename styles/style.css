@@ -1,0 +1,26 @@
+@import url("/styles/header.css");
+@import url("/styles/cartoes.css");
+@import url("/styles/desktop.css");
+
+@font-face {
+    font-family: 'icones';
+    src: url(../assets/font/icones.ttf);
+}
+
+:root {
+    --cor-de-fundo-principal: #1D232A;
+    --cor-de-fundo-alternativa: #15191C;
+    --cor-do-texto-principal: #FFFFFF;
+    --cor-do-texto-alternativa: #95999C;
+    --cor-do-cartao: #2C343A;
+    --cor-do-botao: #0480DC;
+
+    --fonte-principal: "Open Sans", sans-serif;
+}
+
+body {
+    background-color: var(--cor-de-fundo-principal);
+    color: var(--cor-do-texto-principal);
+    font-family: var(--fonte-principal), 'icones';
+}
+
